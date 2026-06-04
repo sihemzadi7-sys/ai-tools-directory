@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://aitoolshub.com',
+    url: 'https://ailiq.xyz',
     siteName: 'AI ToolsHub',
     title: 'AI ToolsHub - Discover the Best AI Tools',
     description: 'Comprehensive directory of AI tools with reviews, comparisons, and guides.',
@@ -52,6 +52,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'AI ToolsHub - Discover the Best AI Tools',
     description: 'Comprehensive directory of AI tools with reviews, comparisons, and guides.',
+  },
+  verification: {
+    google: 'mFgYEPZaiY5KYBXbwXIB2lMmiKCFPJ8zcKSio2qAbDo',
   },
   icons: {
     icon: [
@@ -86,6 +89,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable} bg-background`}>
+      <head />
       <body className="font-sans antialiased">
         <ComparisonProvider>
           <Header />
